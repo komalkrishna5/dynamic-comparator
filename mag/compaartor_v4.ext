@@ -1,0 +1,204 @@
+timestamp 1647355571
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use preamp_part2 preamp_part2_0 1 0 138 0 1 1376
+use preamp_part1 preamp_part1_0 1 0 720 0 1 260
+use latch_2 latch_2_0 1 0 86 0 1 2636
+use SR_latch SR_latch_0 1 0 394 0 1 4454
+node "Vp" 0 260.94 1116 -116 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68400 1056 0 0 0 0 0 0 0 0 0 0
+node "Vn" 0 255.186 296 -116 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65856 1036 0 0 0 0 0 0 0 0 0 0
+node "m1_1202_1938#" 4 908.66 1202 1938 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116940 4188 0 0 0 0 0 0 0 0 0 0
+node "m1_n58_544#" 4 796.655 -58 544 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103856 3792 0 0 0 0 0 0 0 0 0 0
+node "li_n270_1084#" 81 171.975 -270 1084 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16600 764 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_80_2410#" 45 114.13 80 2410 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 508 0 0 0 0 0 0 0 0 0 0 0 0
+node "Outn" 16 78.185 1090 4862 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7400 348 0 0 0 0 0 0 0 0 0 0 0 0
+node "Outp" 47 151.78 514 4852 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17816 660 0 0 0 0 0 0 0 0 0 0 0 0
+node "GND" 275 15303.5 -2592 -884 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8321428 28096 1349808 13232 1349808 13232 1349808 13232 1349808 13232 7977560 15376 0 0
+node "CLK" 1734 16650.3 510 2494 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36516 2152 0 0 639860 8112 668136 8828 4400052 39184 3850892 21796 0 0 0 0 0 0
+node "CLKBAR" 106 660.252 760 3478 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92288 1272 0 0 17784 540 17784 540 0 0 0 0 0 0 0 0 0 0
+node "a_1048_4532#" 499 2915.6 1048 4532 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20788 952 0 0 8368 504 409552 11360 0 0 0 0 0 0 0 0 0 0
+node "a_366_4532#" 479 3259.19 366 4532 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18592 828 0 0 15984 888 477728 14188 0 0 0 0 0 0 0 0 0 0
+node "a_652_4812#" 181 21.536 652 4812 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240 76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_176_778#" 2240 186.719 176 778 nw 0 0 0 0 61180 992 0 0 29264 732 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49492 928 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_178_2078#" 7877 1405.51 178 2078 nw 0 0 0 0 468504 3540 0 0 16296 556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36828 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 2644 17443.9 -348 3152 nw 0 0 0 0 206336 1824 0 0 11696 480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8050900 29500 1134468 14080 7917664 20416 1048924 11588 7700232 15292 0 0 0 0
+node "w_782_5052#" 3460 140.755 782 5052 nw 0 0 0 0 44872 884 0 0 17784 612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21640 756 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_86_n24#" 0 0 86 -24 ppd 0 0 0 0 0 0 0 0 0 0 12672 496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16760 636 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_n270_1084#" "a_366_4532#" 68.9
+cap "li_n270_1084#" "GND" 28.8316
+cap "CLK" "a_1048_4532#" 387.157
+cap "m1_n58_544#" "CLK" 69.5648
+cap "w_178_2078#" "CLK" 179.767
+cap "CLK" "m1_1202_1938#" 70.9
+cap "CLK" "VDD" 722.286
+cap "CLK" "Vp" 19.2233
+cap "Vn" "CLK" 17.8378
+cap "CLK" "a_366_4532#" 383.156
+cap "CLK" "GND" 922.096
+cap "CLK" "li_n270_1084#" 6.34615
+cap "Outn" "Outp" 6.09554
+cap "a_652_4812#" "a_366_4532#" 2.94872
+cap "a_1048_4532#" "m1_1202_1938#" 775.227
+cap "a_1048_4532#" "VDD" 252.22
+cap "VDD" "w_782_5052#" 88.3518
+cap "a_1048_4532#" "a_366_4532#" 498.297
+cap "m1_n58_544#" "a_366_4532#" 965.934
+cap "VDD" "m1_1202_1938#" 63.0768
+cap "m1_n58_544#" "GND" 63.0768
+cap "li_80_2410#" "GND" 12.6718
+cap "a_366_4532#" "VDD" 242.961
+cap "m1_n58_544#" "li_n270_1084#" 57.08
+cap "VDD" "CLKBAR" 408.264
+cap "a_366_4532#" "GND" 272.129
+cap "preamp_part1_0/li_n718_44#" "preamp_part1_0/a_n656_268#" -1.84932
+cap "preamp_part1_0/GND" "preamp_part1_0/li_n718_44#" 9.59016
+cap "preamp_part1_0/GND" "preamp_part1_0/a_n434_n260#" 12.0214
+cap "preamp_part1_0/li_n718_44#" "preamp_part1_0/sky130_fd_pr__nfet_01v8_G6PLX8_0/a_n221_n74#" 3.64525
+cap "preamp_part1_0/li_954_42#" "preamp_part1_0/GND" 3.17114
+cap "preamp_part1_0/w_n720_482#" "preamp_part1_0/sky130_fd_pr__nfet_01v8_G6PLX8_0/a_n221_n74#" 8.7473
+cap "preamp_part1_0/a_n656_268#" "preamp_part1_0/w_n720_482#" 1.51622
+cap "preamp_part1_0/a_n434_n260#" "preamp_part1_0/a_80_n258#" -16.9725
+cap "preamp_part1_0/a_388_n260#" "preamp_part1_0/a_80_n258#" -17.0868
+cap "preamp_part1_0/li_n718_44#" "preamp_part1_0/sky130_fd_pr__nfet_01v8_G6PLX8_0/a_n221_n74#" 3.64525
+cap "preamp_part1_0/GND" "preamp_part1_0/a_n434_n260#" 12.0214
+cap "preamp_part1_0/a_864_270#" "preamp_part1_0/li_954_42#" 5.45455
+cap "preamp_part1_0/li_954_42#" "preamp_part1_0/GND" 3.17114
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part1_0/w_n720_482#" 8.58247
+cap "preamp_part2_0/GND" "preamp_part1_0/w_n720_482#" 12.1579
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_15_n100#" 9.51429
+cap "preamp_part1_0/li_n718_44#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" 33.6017
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_15_n100#" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/w_n109_n162#" 10.373
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "preamp_part1_0/VDD" 34
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part2_0/a_148_644#" -4.01786
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part2_0/a_380_480#" 1.02273
+cap "preamp_part1_0/a_506_940#" "preamp_part2_0/GND" 9.42857
+cap "preamp_part1_0/li_n718_44#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" 27.951
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "preamp_part2_0/a_380_480#" 3.43678
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "preamp_part1_0/a_506_940#" 14.3915
+cap "preamp_part1_0/VDD" "preamp_part1_0/sky130_fd_pr__nfet_01v8_G6PLX8_0/a_n221_n74#" 18.5052
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" 116.488
+cap "preamp_part2_0/a_380_480#" "preamp_part1_0/li_954_42#" 2.46575
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "preamp_part2_0/GND" 54.9816
+cap "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/w_n109_n162#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_XJTKXQ_0/a_n125_n74#" 0.849201
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_15_n100#" 9.51429
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_XJTKXQ_0/a_n125_n74#" 23.1489
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part1_0/VDD" 22.8118
+cap "preamp_part1_0/VDD" "preamp_part2_0/GND" 105.774
+cap "preamp_part1_0/li_954_42#" "preamp_part1_0/a_864_270#" 11.261
+cap "latch_2_0/inv_W2_0/Vin" "latch_2_0/inv_W2_0/VDD" 17.7837
+cap "latch_2_0/inv_W2_0/Vout" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 3.12657
+cap "latch_2_0/inv_W2_0/VDD" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 11.1654
+cap "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/w_n109_n162#" "latch_2_0/inv_W2_0/GND" 10.7442
+cap "latch_2_0/inv_W2_0/Vout" "latch_2_0/inv_W2_0/Vin" 1.76966
+cap "preamp_part2_0/VDD" "preamp_part2_0/a_1170_652#" 70.8502
+cap "preamp_part2_0/VDD" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n73_n100#" 1.13687e-13
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part2_0/a_380_480#" 9.71591
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_1/VDD" 58.8309
+cap "preamp_part2_0/VDD" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n15_n126#" 71.7475
+cap "latch_2_0/inv_W2_1/Vin" "latch_2_0/inv_W2_1/VDD" 17.4747
+cap "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part2_0/a_148_644#" 28.125
+cap "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n15_n126#" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n73_n100#" 4.78585
+cap "preamp_part2_0/VDD" "preamp_part2_0/a_148_644#" 40.4353
+cap "latch_2_0/inv_W2_1/GND" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_15_n100#" 3.5283
+cap "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n15_n126#" "latch_2_0/inv_W2_1/GND" 41.9954
+cap "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n15_n126#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_15_n100#" 5.62327
+cap "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "latch_2_0/inv_W2_1/VDD" 1.73684
+cap "preamp_part2_0/VDD" "latch_2_0/inv_W2_1/Vout" 3.22414
+cap "preamp_part2_0/VDD" "latch_2_0/inv_W2_1/Vin" 3.22414
+cap "preamp_part2_0/VDD" "latch_2_0/inv_W2_1/GND" 285.214
+cap "preamp_part2_0/VDD" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_15_n100#" 26.2619
+cap "preamp_part2_0/VDD" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n15_n126#" 68.9902
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_1/Vin" 251.915
+cap "latch_2_0/inv_W2_1/GND" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n73_n100#" 3.5283
+cap "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n15_n126#" "latch_2_0/inv_W2_1/GND" 36.0938
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 18.9908
+cap "preamp_part2_0/VDD" "preamp_part2_0/sky130_fd_pr__nfet_01v8_XJTKXQ_0/a_n125_n74#" 0.849201
+cap "latch_2_0/inv_W2_1/Vin" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 3.12657
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_1/GND" 263.571
+cap "latch_2_0/inv_W2_1/GND" "latch_2_0/inv_W2_1/Vin" 34.2451
+cap "latch_2_0/inv_W2_1/Vin" "latch_2_0/inv_W2_1/sky130_fd_pr__nfet_01v8_XJTKXQ_0/a_n125_n74#" 32.8186
+cap "preamp_part2_0/VDD" "latch_2_0/inv_W2_1/Vin" 1.42109e-14
+cap "latch_2_0/inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n221_n74#" "latch_2_0/inv_W2_1/Vin" 15.3012
+cap "w_178_2078#" "preamp_part2_0/a_1170_652#" -56.62
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_1/sky130_fd_pr__nfet_01v8_XJTKXQ_0/a_n125_n74#" 33.0927
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n221_n74#" 6.62791
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_1/Vin" -90.8303
+cap "preamp_part2_0/VDD" "latch_2_0/inv_W2_1/sky130_fd_pr__nfet_01v8_XJTKXQ_0/a_n125_n74#" 16.5
+cap "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "latch_2_0/inv_W2_0/Vout" 9.83654
+cap "latch_2_0/inv_W2_0/Vin" "latch_2_0/inv_W2_0/VDD" 20.7692
+cap "latch_2_0/inv_W2_0/Vin" "latch_2_0/inv_W2_0/Vout" 7.58427
+cap "latch_2_0/inv_W2_0/VDD" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 111.593
+cap "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "latch_2_0/inv_W2_1/VDD" 15.9256
+cap "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" "latch_2_0/inv_W2_1/VDD" 193.292
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_1/Vin" 15.3429
+cap "SR_latch_0/GND" "SR_latch_0/a_518_392#" 4.38728
+cap "latch_2_0/inv_W2_1/VDD" "latch_2_0/inv_W2_1/Vin" 0.931034
+cap "SR_latch_0/GND" "latch_2_0/inv_W2_1/Vout" 26.4556
+cap "SR_latch_0/GND" "latch_2_0/inv_W2_1/Vin" 8.2
+cap "SR_latch_0/GND" "SR_latch_0/a_262_508#" 2.96629
+cap "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 10.9802
+cap "latch_2_0/inv_W2_1/Vout" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" 4.65183e-14
+cap "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" "latch_2_0/inv_W2_1/Vout" 0.0472214
+cap "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "latch_2_0/inv_W2_1/Vin" 30.5365
+cap "latch_2_0/inv_W2_1/Vout" "SR_latch_0/a_518_392#" 0.402439
+cap "latch_2_0/inv_W2_1/Vin" "latch_2_0/inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n221_n74#" 21.4286
+cap "latch_2_0/inv_W2_1/Vin" "latch_2_0/inv_W2_1/Vout" 7.75862
+cap "SR_latch_0/a_262_508#" "SR_latch_0/VDD" 96.8724
+cap "SR_latch_0/GND" "SR_latch_0/a_518_392#" 4.38728
+cap "SR_latch_0/a_262_508#" "SR_latch_0/GND" 2.96629
+cap "SR_latch_0/a_262_508#" "SR_latch_0/a_518_392#" -6.09554
+cap "SR_latch_0/a_518_392#" "SR_latch_0/VDD" 58.2776
+merge "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" "CLKBAR" -242.167 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49044 -496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "SR_latch_0/VSUBS" "SR_latch_0/GND" -531.134 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -85778 -2136 0 0 0 0 0 0 0 0 0 0 0 0
+merge "SR_latch_0/GND" "latch_2_0/inv_W2_1/GND"
+merge "latch_2_0/inv_W2_1/GND" "latch_2_0/VSUBS"
+merge "latch_2_0/VSUBS" "latch_2_0/inv_W2_0/GND"
+merge "latch_2_0/inv_W2_0/GND" "preamp_part2_0/VSUBS"
+merge "preamp_part2_0/VSUBS" "preamp_part2_0/GND"
+merge "preamp_part2_0/GND" "preamp_part1_0/VSUBS"
+merge "preamp_part1_0/VSUBS" "preamp_part1_0/GND"
+merge "preamp_part1_0/GND" "a_86_n24#"
+merge "a_86_n24#" "GND"
+merge "preamp_part2_0/a_380_480#" "preamp_part1_0/a_864_270#" -259.29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -1138 0 0 0 0 0 0 0 0 0 0
+merge "preamp_part1_0/a_864_270#" "m1_1202_1938#"
+merge "preamp_part1_0/a_n434_n260#" "Vn" -118.824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19992 -788 0 0 0 0 0 0 0 0 0 0
+merge "SR_latch_0/a_518_392#" "Outp" -217.253 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -129376 -476 0 0 0 0 0 0 0 0 0 0 0 0
+merge "SR_latch_0/VDD" "SR_latch_0/w_0_524#" -2214.62 0 0 0 0 -460960 -5368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22780 -3720 58548 -552 131714 -1040 0 0 0 0 0 0 0 0
+merge "SR_latch_0/w_0_524#" "w_782_5052#"
+merge "w_782_5052#" "latch_2_0/m1_718_782#"
+merge "latch_2_0/m1_718_782#" "preamp_part2_0/VDD"
+merge "preamp_part2_0/VDD" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/w_n109_n162#"
+merge "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/w_n109_n162#" "li_80_2410#"
+merge "li_80_2410#" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n73_n100#"
+merge "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n73_n100#" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/w_n109_n162#"
+merge "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/w_n109_n162#" "w_178_2078#"
+merge "w_178_2078#" "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#"
+merge "latch_2_0/sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "preamp_part1_0/VDD"
+merge "preamp_part1_0/VDD" "VDD"
+merge "VDD" "preamp_part1_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n73_n100#"
+merge "preamp_part1_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n73_n100#" "li_n270_1084#"
+merge "li_n270_1084#" "preamp_part1_0/w_n720_482#"
+merge "preamp_part1_0/w_n720_482#" "w_176_778#"
+merge "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n73_n100#" "preamp_part1_0/a_n656_268#" -47.3206 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1680 -292 0 0 0 0 0 0 0 0 0 0
+merge "preamp_part1_0/a_n656_268#" "m1_n58_544#"
+merge "SR_latch_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "a_652_4812#" 75.6763 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2580 -140 0 0 -11076 -388 41724 -196 0 0 0 0 0 0 0 0 0 0
+merge "a_652_4812#" "latch_2_0/inv_W2_1/Vout"
+merge "latch_2_0/inv_W2_1/Vout" "latch_2_0/inv_W2_0/Vin"
+merge "latch_2_0/inv_W2_0/Vin" "preamp_part1_0/li_n718_44#"
+merge "preamp_part1_0/li_n718_44#" "a_366_4532#"
+merge "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n15_n126#" "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n15_n126#" -1966.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13884 -268 0 0 0 0 -53924 -836 -1223534 -4500 -375200 -2800 0 0 0 0 0 0
+merge "preamp_part2_0/sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n15_n126#" "preamp_part1_0/a_506_940#"
+merge "preamp_part1_0/a_506_940#" "preamp_part2_0/a_1170_652#"
+merge "preamp_part2_0/a_1170_652#" "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#"
+merge "preamp_part2_0/sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#" "preamp_part1_0/a_n302_940#"
+merge "preamp_part1_0/a_n302_940#" "preamp_part2_0/a_148_644#"
+merge "preamp_part2_0/a_148_644#" "preamp_part1_0/a_80_n258#"
+merge "preamp_part1_0/a_80_n258#" "CLK"
+merge "preamp_part1_0/a_388_n260#" "Vp" -101.695 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12012 -800 0 0 0 0 0 0 0 0 0 0
+merge "SR_latch_0/sky130_fd_pr__nfet_01v8_F5U58G_1/a_n15_n126#" "latch_2_0/inv_W2_1/Vin" -737.106 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -153428 -60 0 0 -140572 -192 -102904 -204 0 0 0 0 0 0 0 0 0 0
+merge "latch_2_0/inv_W2_1/Vin" "preamp_part1_0/li_954_42#"
+merge "preamp_part1_0/li_954_42#" "a_1048_4532#"
+merge "SR_latch_0/a_262_508#" "Outn" -54.8902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10584 -220 0 0 0 0 0 0 0 0 0 0 0 0

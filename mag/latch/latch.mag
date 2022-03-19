@@ -1,0 +1,36 @@
+magic
+tech sky130A
+timestamp 1646333448
+<< locali >>
+rect -6 450 11 475
+rect 0 286 6 305
+rect 34 286 91 305
+rect -6 0 6 26
+<< viali >>
+rect 6 286 34 305
+rect 1 218 41 246
+rect 517 218 557 246
+<< metal1 >>
+rect -6 305 40 312
+rect -6 286 6 305
+rect 34 286 40 305
+rect -6 282 40 286
+rect -6 246 567 253
+rect -6 218 1 246
+rect 41 218 517 246
+rect 557 218 567 246
+rect -6 211 567 218
+use inv_W2  inv_W2_0 ~/mycomparator/layout/myinv_layout2
+timestamp 1646324451
+transform 1 0 60 0 1 36
+box -60 -36 202 439
+use inv_W2  inv_W2_1
+timestamp 1646324451
+transform 1 0 322 0 1 36
+box -60 -36 202 439
+<< labels >>
+rlabel metal1 -6 297 -6 297 7 outn
+rlabel metal1 -6 232 -6 232 7 outp
+rlabel locali -6 463 -6 463 7 VDD
+rlabel locali -6 14 -6 14 7 GND
+<< end >>

@@ -1,0 +1,49 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1645263751
+<< nwell >>
+rect -100 420 -98 826
+rect 106 758 334 794
+rect 156 432 282 494
+<< poly >>
+rect 156 466 282 506
+rect 156 436 190 466
+rect 84 416 190 436
+rect 84 370 100 416
+rect 150 370 190 416
+rect 84 352 190 370
+rect 160 298 190 352
+<< polycont >>
+rect 100 370 150 416
+<< locali >>
+rect -100 828 388 878
+rect 106 794 140 828
+rect 106 758 334 794
+rect 106 578 140 758
+rect 298 684 334 758
+rect 84 420 168 436
+rect -100 416 168 420
+rect -100 370 100 416
+rect 150 370 168 416
+rect -100 364 168 370
+rect 84 352 168 364
+rect 202 420 236 556
+rect 202 364 388 420
+rect 202 260 236 364
+rect 6 -20 82 114
+rect -100 -72 388 -20
+use nmos_1u  nmos_1u_0
+timestamp 1644925353
+transform 1 0 112 0 1 14
+box -112 -14 136 300
+use pmos_2uf2  pmos_2uf2_0
+timestamp 1645079724
+transform 1 0 219 0 1 622
+box -317 -202 169 204
+<< labels >>
+rlabel locali -100 390 -100 390 7 Vin
+rlabel locali 388 392 388 392 3 Vout
+rlabel locali -100 854 -100 854 7 VDD
+rlabel locali -100 -46 -100 -46 7 GND
+<< end >>

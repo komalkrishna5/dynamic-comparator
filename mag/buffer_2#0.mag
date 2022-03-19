@@ -1,0 +1,18 @@
+magic
+tech sky130A
+timestamp 1646326308
+<< nwell >>
+rect 833 250 1008 450
+<< locali >>
+rect 2425 218 2448 246
+use inv_W8  inv_W8_0
+timestamp 1646325197
+transform 1 0 -177 0 1 0
+box 177 0 1025 477
+use inv_W16  inv_W16_0
+timestamp 1646325283
+transform 1 0 854 0 1 0
+box -7 0 1594 477
+<< labels >>
+rlabel locali 2448 232 2448 232 3 Vout
+<< end >>

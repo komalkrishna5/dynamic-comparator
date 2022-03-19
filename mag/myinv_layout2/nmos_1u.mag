@@ -1,0 +1,25 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1644925353
+<< ndiff >>
+rect -12 74 -10 274
+<< psubdiff >>
+rect -112 236 -12 274
+rect -112 112 -90 236
+rect -56 112 -12 236
+rect -112 74 -12 112
+<< psubdiffcont >>
+rect -90 112 -56 236
+<< locali >>
+rect -106 236 2 262
+rect -106 112 -90 236
+rect -56 112 2 236
+rect -106 86 2 112
+<< metal1 >>
+rect -86 2 96 36
+use sky130_fd_pr__nfet_01v8_7RYEVP  sky130_fd_pr__nfet_01v8_7RYEVP_0 ~/my_sky130_project/mag/myinv_layout2
+timestamp 1644925353
+transform 1 0 63 0 1 143
+box -73 -157 73 157
+<< end >>

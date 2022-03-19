@@ -1,0 +1,66 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1645075726
+<< error_s >>
+rect 890 113 948 119
+rect 890 79 902 113
+rect 890 73 948 79
+<< nwell >>
+rect -156 418 314 800
+<< pmos >>
+rect 46 480 76 680
+rect 134 480 164 680
+<< pdiff >>
+rect -20 644 46 680
+rect -20 520 0 644
+rect 34 520 46 644
+rect -20 480 46 520
+rect 76 644 134 680
+rect 76 520 88 644
+rect 122 520 134 644
+rect 76 480 134 520
+rect 164 644 222 680
+rect 164 520 176 644
+rect 210 520 222 644
+rect 164 480 222 520
+<< pdiffc >>
+rect 0 520 34 644
+rect 88 520 122 644
+rect 176 520 210 644
+<< nsubdiff >>
+rect -114 644 -20 680
+rect -114 520 -78 644
+rect -44 520 -20 644
+rect -114 480 -20 520
+<< nsubdiffcont >>
+rect -78 520 -44 644
+<< poly >>
+rect 46 680 76 730
+rect 134 680 164 730
+rect 46 428 76 480
+rect 134 428 164 480
+<< locali >>
+rect -106 644 40 680
+rect -106 520 -78 644
+rect -44 520 0 644
+rect 34 520 40 644
+rect -106 482 40 520
+rect -6 480 40 482
+rect 82 644 128 680
+rect 82 520 88 644
+rect 122 520 128 644
+rect 82 480 128 520
+rect 170 644 216 680
+rect 170 520 176 644
+rect 210 520 216 644
+rect 170 480 216 520
+use pmos_2uf2  sky130_fd_pr__pfet_01v8_SBMASV_0
+timestamp 1645025748
+transform 1 0 871 0 1 -68
+box -317 -202 169 204
+use sky130_fd_pr__pfet_01v8_U9MAPM  sky130_fd_pr__pfet_01v8_U9MAPM_0
+timestamp 1645025748
+transform 1 0 1355 0 1 -78
+box 0 0 1 1
+<< end >>

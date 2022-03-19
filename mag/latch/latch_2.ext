@@ -1,0 +1,46 @@
+timestamp 1646818746
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use inv_W2 inv_W2_0 1 0 120 0 1 72
+use inv_W2 inv_W2_1 1 0 1198 0 1 72
+use sky130_fd_pr__pfet_01v8_5SVZDE sky130_fd_pr__pfet_01v8_5SVZDE_0 1 0 789 0 1 712
+node "m1_718_782#" 2 233.662 718 782 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25988 1272 0 0 0 0 0 0 0 0 0 0
+node "li_520_0#" 134 283.353 520 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29744 1248 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_480_436#" 139 318.512 480 436 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35840 1392 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_502_900#" 224 400.76 502 900 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38768 1780 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_718_782#" "li_502_900#" 104.31
+cap "li_480_436#" "li_502_900#" 7.31014
+cap "li_520_0#" "li_480_436#" 49.1562
+cap "inv_W2_0/sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#" "inv_W2_0/li_n100_828#" 182.468
+cap "inv_W2_0/li_n100_828#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" 227.111
+cap "inv_W2_0/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n159_n152#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" 13.1085
+cap "inv_W2_0/li_202_260#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" 57.529
+cap "inv_W2_0/li_n100_828#" "inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n129_n100#" 35.9111
+cap "inv_W2_0/sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" 85.249
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" "inv_W2_0/li_n100_828#" 28.8966
+cap "inv_W2_0/li_n100_828#" "inv_W2_0/li_n100_n72#" -1.77636e-15
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" "inv_W2_0/li_202_260#" 11.0141
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" "inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n129_n100#" 48.7057
+cap "inv_W2_0/li_202_260#" "inv_W2_0/li_n100_n72#" -1.54688
+cap "inv_W2_0/li_n100_828#" "inv_W2_0/li_202_260#" 65.0199
+cap "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" 25.5595
+cap "inv_W2_1/li_n100_828#" "inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#" -96.9644
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_15_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" -210.702 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7644 -572 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n173_n100#" "inv_W2_1/li_n100_828#"
+merge "inv_W2_1/li_n100_828#" "inv_W2_0/li_n100_828#"
+merge "inv_W2_0/li_n100_828#" "li_502_900#"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/VSUBS" "inv_W2_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W2_1/VSUBS" "inv_W2_0/VSUBS"
+merge "inv_W2_0/VSUBS" "VSUBS"
+merge "inv_W2_1/a_84_352#" "inv_W2_0/li_202_260#" -71.1308 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10864 -396 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W2_0/li_202_260#" "li_480_436#"
+merge "inv_W2_1/li_n100_n72#" "inv_W2_0/li_n100_n72#" -36.071 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15080 -244 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W2_0/li_n100_n72#" "li_520_0#"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#" "inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#" -1279.2 0 0 0 0 -426400 -3720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W2_1/sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#" "inv_W2_0/sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#"
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_111_n100#" "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" -149.677 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2668 -300 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n81_n100#" "m1_718_782#"

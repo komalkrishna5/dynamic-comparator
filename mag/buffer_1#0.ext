@@ -1,0 +1,22 @@
+timestamp 1646324508
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use inv_W2 inv_W2_0 1 0 588 0 1 72
+use inv_W1 inv_W1_0 1 0 100 0 1 72
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "inv_W2_0/GND" "inv_W2_0/Vin" 32.2784
+cap "inv_W2_0/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n129_n100#" "inv_W2_0/VDD" 116.829
+cap "inv_W2_0/GND" "inv_W1_0/Vin" 2.90674
+cap "inv_W2_0/Vin" "inv_W2_0/VDD" 33.1221
+cap "inv_W2_0/sky130_fd_pr__pfet_01v8_AC5Z8B_0/a_n129_n100#" "inv_W2_0/Vin" 23.6443
+cap "inv_W2_0/GND" "inv_W2_0/VDD" -1.77636e-15
+cap "inv_W2_0/Vin" "inv_W1_0/Vin" 11.0875
+merge "inv_W1_0/VSUBS" "inv_W2_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W2_0/VSUBS" "VSUBS"
+merge "inv_W1_0/Vout" "inv_W2_0/Vin" -32.196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1120 -152 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W1_0/w_156_432#" "inv_W2_0/VDD" -52.545 0 0 0 0 -7640 -804 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1000 -140 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_W2_0/VDD" "inv_W2_0/sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#"
+merge "inv_W1_0/GND" "inv_W2_0/GND" -30.482 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1040 -144 0 0 0 0 0 0 0 0 0 0 0 0

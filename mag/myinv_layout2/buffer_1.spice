@@ -1,0 +1,48 @@
+* SPICE3 file created from buffer_1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_AC5Z8B a_159_n100# a_n221_n74# a_n129_n100# a_63_n100#
++ a_n63_n126# a_n159_n130# a_33_n130# w_n257_n200# a_n33_n100# a_129_n126# VSUBS
+X0 a_63_n100# a_33_n130# a_n33_n100# w_n257_n200# sky130_fd_pr__pfet_01v8 ad=3.3e+11p pd=2.66e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n63_n126# a_n129_n100# w_n257_n200# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X2 a_159_n100# a_129_n126# a_63_n100# w_n257_n200# sky130_fd_pr__pfet_01v8 ad=3.048e+11p pd=2.62e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 a_n129_n100# a_n159_n130# a_n221_n74# w_n257_n200# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.048e+11p ps=2.62e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_XJTKXQ a_33_n142# a_63_n100# a_n63_n142# a_n125_n74#
++ a_n33_n100# VSUBS
+X0 a_63_n100# a_33_n142# a_n33_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=3.048e+11p pd=2.62e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n63_n142# a_n125_n74# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=3.048e+11p ps=2.62e+06u w=1e+06u l=150000u
+.ends
+
+.subckt inv_W2 Vin VDD GND w_n106_454# VSUBS
+Xsky130_fd_pr__pfet_01v8_AC5Z8B_0 VDD VDD VDD VDD Vin Vin Vin w_n106_454# VDD Vin
++ VSUBS sky130_fd_pr__pfet_01v8_AC5Z8B
+Xsky130_fd_pr__nfet_01v8_XJTKXQ_0 Vin GND Vin GND VDD VSUBS sky130_fd_pr__nfet_01v8_XJTKXQ
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_7RYEVP a_n73_n69# a_n33_n157# a_15_n69# VSUBS
+X0 a_15_n69# a_n33_n157# a_n73_n69# VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt nmos_1u sky130_fd_pr__nfet_01v8_7RYEVP_0/VSUBS sky130_fd_pr__nfet_01v8_7RYEVP_0/a_15_n69#
++ m1_n86_2#
+Xsky130_fd_pr__nfet_01v8_7RYEVP_0 sky130_fd_pr__nfet_01v8_7RYEVP_0/VSUBS m1_n86_2#
++ sky130_fd_pr__nfet_01v8_7RYEVP_0/a_15_n69# sky130_fd_pr__nfet_01v8_7RYEVP_0/VSUBS
++ sky130_fd_pr__nfet_01v8_7RYEVP
+.ends
+
+.subckt pmos_2uf2 a_63_n100# a_33_n130# w_n317_n202# a_n33_n100# a_n63_n130# VSUBS
+X0 a_63_n100# a_33_n130# a_n33_n100# w_n317_n202# sky130_fd_pr__pfet_01v8 ad=3.048e+11p pd=2.62e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n63_n130# w_n317_n202# w_n317_n202# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.8e+11p ps=2.76e+06u w=1e+06u l=150000u
+.ends
+
+.subckt inv_W1 Vout Vin VDD GND
+Xnmos_1u_0 GND Vout Vin nmos_1u
+Xpmos_2uf2_0 VDD Vin VDD Vout Vin GND pmos_2uf2
+.ends
+
+.subckt buffer_1
+Xinv_W2_0 inv_W2_0/Vin inv_W2_0/VDD VSUBS inv_W2_0/VDD VSUBS inv_W2
+Xinv_W1_0 inv_W2_0/Vin inv_W2_0/Vin inv_W2_0/VDD VSUBS inv_W1
+.ends
+

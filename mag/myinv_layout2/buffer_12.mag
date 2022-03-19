@@ -1,0 +1,22 @@
+magic
+tech sky130A
+timestamp 1646326465
+<< locali >>
+rect 0 450 22 475
+rect 0 218 26 246
+rect 2914 218 2943 246
+rect 0 0 18 26
+use buffer_1  buffer_1_0
+timestamp 1646324508
+transform 1 0 0 0 1 0
+box 0 0 496 475
+use buffer_2  buffer_2_0
+timestamp 1646326308
+transform 1 0 495 0 1 0
+box 0 0 2448 477
+<< labels >>
+rlabel locali 0 20 0 20 7 GND
+rlabel locali 2943 238 2943 238 3 buf_out
+rlabel locali 0 238 0 238 7 buf_in
+rlabel locali 0 469 0 469 7 VDD
+<< end >>

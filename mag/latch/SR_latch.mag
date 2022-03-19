@@ -1,0 +1,64 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1646810677
+<< nwell >>
+rect 0 524 872 926
+<< poly >>
+rect 166 848 292 902
+rect 648 848 774 902
+rect 262 576 292 610
+rect 262 566 380 576
+rect 262 520 318 566
+rect 364 520 380 566
+rect 262 508 380 520
+rect 648 474 678 606
+rect 518 450 678 474
+rect 518 410 540 450
+rect 582 434 678 450
+rect 582 410 602 434
+rect 518 392 602 410
+<< polycont >>
+rect 318 520 364 566
+rect 540 410 582 450
+<< locali >>
+rect 2 896 872 948
+rect 114 774 152 896
+rect 308 776 344 896
+rect 596 766 632 896
+rect 790 768 826 896
+rect 212 470 248 652
+rect 696 584 732 696
+rect 306 566 732 584
+rect 306 520 318 566
+rect 364 520 732 566
+rect 306 504 732 520
+rect 212 450 598 470
+rect 212 410 540 450
+rect 582 410 598 450
+rect 212 392 598 410
+rect 212 272 248 392
+rect 696 316 732 504
+rect 298 52 336 184
+rect 606 52 644 194
+rect 0 0 872 52
+use sky130_fd_pr__nfet_01v8_F5U58G  sky130_fd_pr__nfet_01v8_F5U58G_0
+timestamp 1646507701
+transform 1 0 273 0 1 248
+box -73 -126 73 126
+use sky130_fd_pr__nfet_01v8_F5U58G  sky130_fd_pr__nfet_01v8_F5U58G_1
+timestamp 1646507701
+transform 1 0 669 0 1 250
+box -73 -126 73 126
+use sky130_fd_pr__pfet_01v8_AC5E9B  sky130_fd_pr__pfet_01v8_AC5E9B_0
+timestamp 1646507701
+transform 1 0 229 0 1 724
+box -161 -200 161 200
+use sky130_fd_pr__pfet_01v8_AC5E9B  sky130_fd_pr__pfet_01v8_AC5E9B_1
+timestamp 1646507701
+transform 1 0 711 0 1 726
+box -161 -200 161 200
+<< labels >>
+rlabel locali 872 934 872 934 3 VDD
+rlabel locali 870 26 870 26 3 GND
+<< end >>

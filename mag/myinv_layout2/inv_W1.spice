@@ -1,0 +1,40 @@
+* SPICE3 file created from inv_W1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_7RYEVP a_n73_n69# a_n33_n157# a_15_n69# VSUBS
+X0 a_15_n69# a_n33_n157# a_n73_n69# VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt nmos_1u sky130_fd_pr__nfet_01v8_7RYEVP_0/VSUBS sky130_fd_pr__nfet_01v8_7RYEVP_0/a_15_n69#
++ m1_n86_2#
+Xsky130_fd_pr__nfet_01v8_7RYEVP_0 sky130_fd_pr__nfet_01v8_7RYEVP_0/VSUBS m1_n86_2#
++ sky130_fd_pr__nfet_01v8_7RYEVP_0/a_15_n69# sky130_fd_pr__nfet_01v8_7RYEVP_0/VSUBS
++ sky130_fd_pr__nfet_01v8_7RYEVP
+.ends
+
+.subckt pmos_2uf2 a_63_n100# a_33_n130# w_n317_n202# a_n33_n100# a_n63_n130# VSUBS
+X0 a_63_n100# a_33_n130# a_n33_n100# w_n317_n202# sky130_fd_pr__pfet_01v8 ad=3.048e+11p pd=2.62e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n63_n130# w_n317_n202# w_n317_n202# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.8e+11p ps=2.76e+06u w=1e+06u l=150000u
+.ends
+
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+Vdd Vdd gnd 1.8
+Vin Vin gnd 0
+
+.control
+dc Vin 0 1.8 0.01
+plot Vin Vout
+save all
+write PLS_INV1.raw
+.endc
+
+**** end user architecture code
+* Top level circuit inv_W1
+
+Xnmos_1u_0 gnd Vout Vin nmos_1u
+Xpmos_2uf2_0 Vdd Vin Vdd Vout Vin gnd pmos_2uf2
+.end
+

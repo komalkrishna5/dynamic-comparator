@@ -1,0 +1,165 @@
+* SPICE3 file created from comparator_v2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_RFM3CD a_n73_n100# w_n109_n162# a_15_n100# a_n15_n126#
++ VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_F5U58G#0 a_n73_n100# a_15_n100# a_n15_n126# VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_XJTKXQ#0 a_n63_n152# a_63_n100# a_n125_n74# a_n33_n100#
++ VSUBS
+X0 a_63_n100# a_n63_n152# a_n33_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=3.048e+11p pd=2.62e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n63_n152# a_n125_n74# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=3.048e+11p ps=2.62e+06u w=1e+06u l=150000u
+.ends
+
+.subckt preamp_part2 a_148_644# sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126# a_380_480#
++ sky130_fd_pr__pfet_01v8_RFM3CD_1/w_n109_n162# sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n15_n126#
++ sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n15_n126# a_1170_652# sky130_fd_pr__pfet_01v8_RFM3CD_0/w_n109_n162#
++ VDD GND a_792_2# VSUBS
+Xsky130_fd_pr__pfet_01v8_RFM3CD_0 VDD sky130_fd_pr__pfet_01v8_RFM3CD_0/w_n109_n162#
++ li_210_488# sky130_fd_pr__pfet_01v8_RFM3CD_0/a_n15_n126# VSUBS sky130_fd_pr__pfet_01v8_RFM3CD
+Xsky130_fd_pr__pfet_01v8_RFM3CD_1 li_928_394# sky130_fd_pr__pfet_01v8_RFM3CD_1/w_n109_n162#
++ VDD sky130_fd_pr__pfet_01v8_RFM3CD_1/a_n15_n126# VSUBS sky130_fd_pr__pfet_01v8_RFM3CD
+Xsky130_fd_pr__nfet_01v8_F5U58G_0 m1_322_206# GND sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#
++ VSUBS sky130_fd_pr__nfet_01v8_F5U58G#0
+Xsky130_fd_pr__nfet_01v8_F5U58G_1 a_792_2# li_210_488# a_148_644# VSUBS sky130_fd_pr__nfet_01v8_F5U58G#0
+Xsky130_fd_pr__nfet_01v8_F5U58G_2 li_928_394# a_380_480# a_1170_652# VSUBS sky130_fd_pr__nfet_01v8_F5U58G#0
+Xsky130_fd_pr__nfet_01v8_XJTKXQ_0 a_380_480# m1_322_206# m1_322_206# li_210_488# VSUBS
++ sky130_fd_pr__nfet_01v8_XJTKXQ#0
+Xsky130_fd_pr__nfet_01v8_XJTKXQ_1 a_792_2# m1_322_206# m1_322_206# li_928_394# VSUBS
++ sky130_fd_pr__nfet_01v8_XJTKXQ#0
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_F5U58G a_n73_n100# a_15_n100# a_n15_n126# VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_AC5E9B w_n161_n200# a_33_n126# a_63_n100# a_n125_n74#
++ a_n33_n100# a_n63_n130# VSUBS
+X0 a_63_n100# a_33_n126# a_n33_n100# w_n161_n200# sky130_fd_pr__pfet_01v8 ad=3.048e+11p pd=2.62e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n63_n130# a_n125_n74# w_n161_n200# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.048e+11p ps=2.62e+06u w=1e+06u l=150000u
+.ends
+
+.subckt SR_latch a_648_848# sky130_fd_pr__nfet_01v8_F5U58G_1/a_n15_n126# sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#
++ a_262_508# VDD w_0_524# GND VSUBS
+Xsky130_fd_pr__nfet_01v8_F5U58G_0 a_648_848# GND sky130_fd_pr__nfet_01v8_F5U58G_0/a_n15_n126#
++ VSUBS sky130_fd_pr__nfet_01v8_F5U58G
+Xsky130_fd_pr__nfet_01v8_F5U58G_1 GND a_262_508# sky130_fd_pr__nfet_01v8_F5U58G_1/a_n15_n126#
++ VSUBS sky130_fd_pr__nfet_01v8_F5U58G
+Xsky130_fd_pr__pfet_01v8_AC5E9B_0 w_0_524# a_262_508# VDD VDD a_648_848# a_262_508#
++ VSUBS sky130_fd_pr__pfet_01v8_AC5E9B
+Xsky130_fd_pr__pfet_01v8_AC5E9B_1 w_0_524# a_648_848# VDD VDD a_262_508# a_648_848#
++ VSUBS sky130_fd_pr__pfet_01v8_AC5E9B
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_G6PLX8 a_159_n100# a_n221_n74# a_n129_n100# a_63_n100#
++ a_n33_n100# a_n159_n122# VSUBS
+X0 a_n129_n100# a_n159_n122# a_n221_n74# VSUBS sky130_fd_pr__nfet_01v8 ad=3.3e+11p pd=2.66e+06u as=3.048e+11p ps=2.62e+06u w=1e+06u l=150000u
+X1 a_63_n100# a_n159_n122# a_n33_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=3.3e+11p pd=2.66e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X2 a_n33_n100# a_n159_n122# a_n129_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 a_159_n100# a_n159_n122# a_63_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=3.048e+11p pd=2.62e+06u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_F5U58G#1 a_n73_n100# a_15_n100# a_n15_n126# VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_8FHE5N a_n33_n50# a_63_n50# a_n63_n76# a_33_n76# a_n125_n39#
++ VSUBS
+X0 a_n33_n50# a_n63_n76# a_n125_n39# VSUBS sky130_fd_pr__nfet_01v8 ad=1.65e+11p pd=1.66e+06u as=1.528e+11p ps=1.62e+06u w=500000u l=150000u
+X1 a_63_n50# a_33_n76# a_n33_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=1.528e+11p pd=1.62e+06u as=0p ps=0u w=500000u l=150000u
+.ends
+
+.subckt preamp_part1 li_954_42# li_n718_44# a_n656_268# a_80_n258# a_n302_940# w_n720_482#
++ a_n434_n260# a_506_940# a_864_270# VDD a_388_n260# GND VSUBS
+Xsky130_fd_pr__nfet_01v8_G6PLX8_0 li_n484_188# li_n484_188# a_n656_268# a_n656_268#
++ li_n484_188# a_n434_n260# VSUBS sky130_fd_pr__nfet_01v8_G6PLX8
+Xsky130_fd_pr__nfet_01v8_G6PLX8_1 li_n484_188# li_n484_188# a_864_270# a_864_270#
++ li_n484_188# a_388_n260# VSUBS sky130_fd_pr__nfet_01v8_G6PLX8
+Xsky130_fd_pr__pfet_01v8_RFM3CD_0 VDD w_n720_482# a_n656_268# a_n302_940# VSUBS sky130_fd_pr__pfet_01v8_RFM3CD
+Xsky130_fd_pr__pfet_01v8_RFM3CD_1 a_864_270# w_n720_482# VDD a_506_940# VSUBS sky130_fd_pr__pfet_01v8_RFM3CD
+Xsky130_fd_pr__nfet_01v8_F5U58G_0 li_n718_44# GND a_n656_268# VSUBS sky130_fd_pr__nfet_01v8_F5U58G#1
+Xsky130_fd_pr__nfet_01v8_F5U58G_1 GND li_954_42# a_864_270# VSUBS sky130_fd_pr__nfet_01v8_F5U58G#1
+Xsky130_fd_pr__nfet_01v8_8FHE5N_0 li_n484_188# GND a_80_n258# a_80_n258# GND VSUBS
++ sky130_fd_pr__nfet_01v8_8FHE5N
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_AC5Z8B a_159_n100# li_217_n290# li_n261_n290# li_229_174#
++ a_n221_n74# a_n129_n100# a_n159_n152# li_225_n726# a_n33_n100# w_n261_n210# li_n261_174#
++ li_n261_n726# VSUBS
+X0 a_n129_n100# a_n159_n152# a_n33_n100# w_n261_n210# sky130_fd_pr__pfet_01v8 ad=6.6e+11p pd=5.32e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n159_n152# a_n129_n100# w_n261_n210# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 a_159_n100# a_n159_n152# a_n129_n100# w_n261_n210# sky130_fd_pr__pfet_01v8 ad=3.048e+11p pd=2.62e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 a_n129_n100# a_n159_n152# a_n221_n74# w_n261_n210# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.048e+11p ps=2.62e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_XJTKXQ a_33_n122# a_n63_n122# a_63_n100# a_n125_n74#
++ a_n33_n100# VSUBS
+X0 a_63_n100# a_33_n122# a_n33_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=3.048e+11p pd=2.62e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_n33_n100# a_n63_n122# a_n125_n74# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=3.048e+11p ps=2.62e+06u w=1e+06u l=150000u
+.ends
+
+.subckt inv_W2 sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210# li_202_260# li_n100_828#
++ li_n100_n72# a_84_352# VSUBS
+Xsky130_fd_pr__pfet_01v8_AC5Z8B_0 li_n100_828# li_202_260# a_84_352# li_n100_828#
++ li_n100_828# li_202_260# a_84_352# li_n100_n72# li_n100_828# sky130_fd_pr__pfet_01v8_AC5Z8B_0/w_n261_n210#
++ li_n100_828# li_n100_n72# VSUBS sky130_fd_pr__pfet_01v8_AC5Z8B
+Xsky130_fd_pr__nfet_01v8_XJTKXQ_0 a_84_352# a_84_352# li_n100_n72# li_n100_n72# li_202_260#
++ VSUBS sky130_fd_pr__nfet_01v8_XJTKXQ
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_5SVZDE a_n111_n158# a_n173_n100# a_15_n100# a_111_n100#
++ a_n81_n100# w_n789_n196# VSUBS
+X0 a_15_n100# a_n111_n158# a_n81_n100# w_n789_n196# sky130_fd_pr__pfet_01v8 ad=3.3e+11p pd=2.66e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_111_n100# a_n111_n158# a_15_n100# w_n789_n196# sky130_fd_pr__pfet_01v8 ad=3.1e+11p pd=2.62e+06u as=0p ps=0u w=1e+06u l=150000u
+X2 a_n81_n100# a_n111_n158# a_n173_n100# w_n789_n196# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.1e+11p ps=2.62e+06u w=1e+06u l=150000u
+.ends
+
+.subckt latch_2 m1_718_782# inv_W2_1/li_202_260# li_480_436# sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#
++ li_520_0# sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158# VSUBS inv_W2_0/a_84_352#
+Xinv_W2_0 sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196# li_480_436# li_502_900# li_520_0#
++ inv_W2_0/a_84_352# VSUBS inv_W2
+Xinv_W2_1 sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196# inv_W2_1/li_202_260# li_502_900#
++ li_520_0# li_480_436# VSUBS inv_W2
+Xsky130_fd_pr__pfet_01v8_5SVZDE_0 sky130_fd_pr__pfet_01v8_5SVZDE_0/a_n111_n158# li_502_900#
++ li_502_900# m1_718_782# m1_718_782# sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196#
++ VSUBS sky130_fd_pr__pfet_01v8_5SVZDE
+C0 sky130_fd_pr__pfet_01v8_5SVZDE_0/w_n789_n196# VSUBS 2.01fF
+.ends
+
+Vdd VDD GND 1.8
+Vn Vn Vp pulse(-100m 100m 1ps 1ps 1ps 5ns 10ns)
+Vcm Vp GND 1.2
+V1 CLK GND pulse(1.8 0 1ps 1ps 1ps 2ns 4ns)
+V2 CLKBAR GND pulse(0 1.8 1ps 1ps 1ps 2ns 4ns)
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.control
+tran 0.01n 50n
+save all
+write comp_testlay2.raw
+.endc
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+* Top level circuit comparator_v2
+
+Xpreamp_part2_0 CLK CLK m1_1202_1938# VDD CLK CLK CLK VDD VDD GND m1_n58_544# GND
++ preamp_part2
+XSR_latch_0 Outp Dn Dp Outn VDD VDD GND GND SR_latch
+Xpreamp_part1_0 Dn Dp m1_n58_544# CLK CLK VDD Vn CLK m1_1202_1938# VDD Vp GND GND
++ preamp_part1
+Xlatch_2_0 VDD Dp Dn VDD GND CLKBAR GND Dp latch_2
+C0 Dn GND 3.25fF
+C1 Dp GND 4.66fF
+C2 CLK GND 14.89fF
+C3 VDD GND 17.60fF
+C4 m1_n58_544# GND 2.08fF
+.end
+

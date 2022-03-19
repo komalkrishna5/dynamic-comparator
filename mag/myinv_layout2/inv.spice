@@ -1,0 +1,21 @@
+* SPICE3 file created from inv.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_5YYKDE a_15_231# a_n81_n297# w_n161_n300# a_n125_n200#
++ VSUBS
+X0 a_63_n200# a_15_231# a_n33_n200# w_n161_n300# sky130_fd_pr__pfet_01v8 ad=6.2e+11p pd=4.62e+06u as=6.6e+11p ps=4.66e+06u w=2e+06u l=150000u
+X1 a_n33_n200# a_n81_n297# a_n125_n200# w_n161_n300# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=6.2e+11p ps=4.62e+06u w=2e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_QQ4XG9 a_n73_n69# a_n33_n157# VSUBS
+X0 a_15_n69# a_n33_n157# a_n73_n69# VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit inv
+
+Xsky130_fd_pr__pfet_01v8_5YYKDE_0 m1_18_0# m1_18_0# w_n254_408# w_n254_408# sky130_fd_pr__pfet_01v8_5YYKDE_0/VSUBS
++ sky130_fd_pr__pfet_01v8_5YYKDE
+Xsky130_fd_pr__nfet_01v8_QQ4XG9_0 sky130_fd_pr__pfet_01v8_5YYKDE_0/VSUBS m1_18_0#
++ sky130_fd_pr__pfet_01v8_5YYKDE_0/VSUBS sky130_fd_pr__nfet_01v8_QQ4XG9
+.end
+
