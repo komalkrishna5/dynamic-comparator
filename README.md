@@ -1,4 +1,4 @@
-# CMOS Rail-To-Rail Comparator
+# CMOS Dynamic Comparator
 Dynamic comparators are the core of high-speed, high-resolution analog-to-digital converters (ADCs) used for communication applications. Most of the dynamic comparators attain high-speed operation only for sufficiently high input difference voltages. The comparators’ performance degrades at small input
 difference voltages due to a limited pre-amplifier gain, which is undesirable for high-speed, high-resolution ADCs. To overcome this drawback, a novel dynamic comparator is presented. The proposed comparator improves the differential gain of the pre-amplifier and reduces the common-mode voltage
 seen by the latch, which leads to a much faster regeneration at small input difference voltages. The proposed comparator is designed, simulated, and compared with the state-of-the-art techniques in 130 nm skywater PDK. 
